@@ -1,10 +1,8 @@
 
 # coding: utf-8
-
 import random
 amount = ''
 player_decision_cards = ''
-
 
 ### This block is creating the class for the dealer
 
@@ -25,7 +23,6 @@ class Dealer(object):
     def createDealer():
         return Dealer(
         dealer_name = 'Denny')
-
 
     ## Need to create function to generate dealer hand
     def dealer_first_card(self):
@@ -142,8 +139,6 @@ class Players(object):
         return 'Player name: %s, Risk profile: %s, Balance: %s, Player Hand: %s, Score: %s' % (self.name, self.risk_profile, float(self.balance), self.player_hand, self.score)
 
 
-
-
 def bet():
     global amount
     amount = ''
@@ -166,18 +161,6 @@ def bet():
                 print 'Thank you'
                 break
 
-"""def end_game_check():
-    global amount
-
-    if plyr.score > dlr.dealer_score:
-        print str(plyr.name) + ' you win!'
-        plyr.addWinnings(amount)
-        print str(plyr.name) + 'your balance increases to ' + str(plyr.balance)
-    else:
-        print str(plyr.name) + ' you loose!'
-        plyr.reduceWinnings(amount)
-        print str(plyr.name) + ' your balance decreases to ' + str(plyr.balance)
-"""
 
 def end_game_check():
     global amount
