@@ -153,9 +153,6 @@ class Players(object):
             else:
                 break
 
-
-
-
     def __str__(self):
         return 'Player name: %s, Risk profile: %s, Balance: %s, Player Hand: %s, Score: %s' % (self.name, self.risk_profile, float(self.balance), self.player_hand, self.score)
 
@@ -254,14 +251,6 @@ def BlackJack():
             print str(plyr.name) + ' your balance is zero. GameOver'
             break
 
-
-
-
-
-
-
-
-# In[22]:
 
 
 BlackJack()
