@@ -4,6 +4,27 @@ import random
 amount = ''
 player_decision_cards = ''
 
+### This block creates the class for the card deck
+class Deck(object):
+
+    diamonds = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+    hearts = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+    spades = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+    clubs = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+    deck = diamonds + hearts + spades + clubs
+
+    def __init__(self, decks = 0):
+        self.decks = decks
+
+    ### Deck methods
+    def decks_initialization(self):
+        del self.decks[:]
+
+        return Deck(
+        decks = deck * random.randrange(1,8,1))
+
+
+
 ### This block is creating the class for the dealer
 
 class Dealer(object):
